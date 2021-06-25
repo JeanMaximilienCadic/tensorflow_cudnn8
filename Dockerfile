@@ -23,7 +23,7 @@ RUN apt install libgl1-mesa-dev \
                 libxext6 -y
 
 #Install requirements
-RUN pip install tensorflow-gpu
+RUN pip install tensorflow-gpu==2.4
 
 #Check the gpu
 CMD ["python", "-c", "import tensorflow as tf;print(tf.config.list_physical_devices())"]
