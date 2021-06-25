@@ -24,7 +24,6 @@ RUN apt install libgl1-mesa-dev \
                 libxext6 -y
 
 #Install requirements
-COPY requirements.txt /
 RUN pip install tensorflow-gpu
 
 #Check the gpu
